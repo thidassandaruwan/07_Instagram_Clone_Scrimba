@@ -1,9 +1,82 @@
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="images/instagram-favicon.svg">
         <link rel="stylesheet" href="styles.css">
         <script src="script.js" defer></script>
+        <title>Oldgram</title>
     </head>
     <body>
-        
+        <div class="app">
+            <header class="app-header">
+                <img class="app-logo" src="images/logo.png" alt="Oldgram logo">
+                <img class="profile-pic" src="images/user-avatar.png" alt="User avatar">
+            </header>
+
+            <main id="feed">
+                <article class="post">
+                    <header class="post-header">
+                        <img class="profile-pic" src="images/avatar-courbet.jpg" alt="Vincent van Gogh">
+                        <div class="user-info">
+                            <span class="user-name">Vincent van Gogh</span>
+                            <span class="user-location">Zundert, Netherlands</span>
+                        </div>
+                    </header>
+                    <figure>
+                        <img class="post-image" src="images/post-courbet.jpg" alt="wavy drawing of Vincent van Gogh">
+                    </figure>
+                    <footer class="post-footer">
+                        <div class="post-actions">
+                            <button class="btn-icon" aria-label="Like post">
+                                <img src="images/icon-heart.png" alt="" aria-hidden="true">
+                            </button>
+                            <button class="btn-icon" aria-label="Comment on post">
+                                <img src="images/icon-comment.png" alt="" aria-hidden="true">
+                            </button>   
+                            <button class="btn-icon" aria-label="Share post">
+                                <img src="images/icon-dm.png" alt="" aria-hidden="true">
+                            </button>   
+                        </div>
+                        <p class="like-count"><strong>21 likes</strong></p>
+                        <p class="post-caption">
+                            <strong>vincey1853</strong> just took a few mushrooms lol.
+                        </p>
+                    </footer>
+                </article>
+
+                <article class="post">
+                    <header class="post-header">
+                        <img class="profile-pic" src="images/avatar-courbet.jpg" alt="Vincent van Gogh">
+                        <div class="user-info">
+                            <span class="user-name">Vincent van Gogh</span>
+                            <span class="user-location">Zundert, Netherlands</span>
+                        </div>
+                    </header>
+                    <figure>
+                        <img class="post-image" src="images/post-courbet.jpg" alt="wavy drawing of Vincent van Gogh">
+                    </figure>
+                    <footer class="post-footer">
+                        <div class="post-actions">
+                            <button class="btn-icon" aria-label="Like post">
+                                <img src="images/icon-heart.png" alt="" aria-hidden="true">
+                            </button>
+                            <button class="btn-icon" aria-label="Comment on post">
+                                <img src="images/icon-comment.png" alt="" aria-hidden="true">
+                            </button>   
+                            <button class="btn-icon" aria-label="Share post">
+                                <img src="images/icon-dm.png" alt="" aria-hidden="true">
+                            </button>   
+                        </div>
+                        <p class="like-count"><strong>21 likes</strong></p>
+                        <p class="post-caption">
+                            <strong>vincey1853</strong> just took a few mushrooms lol.
+                        </p>
+                    </footer>
+                </article>
+            </main>
+
+        </div>
     </body>
 </html>
