@@ -77,6 +77,7 @@ main{
 .post-image{
     display: block;
     width: 100%;
+    cursor: pointer;
 }
 
 .post-footer{
