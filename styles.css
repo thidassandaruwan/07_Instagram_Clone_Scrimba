@@ -100,6 +100,10 @@ main{
     width: 35px;
 }
 
+.btn-icon.heart.liked{
+    background-color: #ea6579;
+}
+
 .like-count{
     display: inline-block;
     padding: 10px 0px;

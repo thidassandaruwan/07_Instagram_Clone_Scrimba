@@ -31,9 +31,19 @@ function updateLikes(event){
     const likeCount = postElement.querySelector(".like-count");
     const postCreator = postElement.querySelector(".postCreator").textContent;
 
+    // get the post object
     const postObject = posts.find(post => post.username === postCreator);
-    likeCount.textContent = `${++postObject.likes} likes`;
-    console.log("clicked");
+
+    const likeButton = document.querySelector(".heart");
+    if (likeButton.classList.contains("liked")){
+        let likes = parseInt(likeCount.textContent);
+        likeCount.textContent = `${--likes} likes`;
+        likeButton.classList.remove("liked");
+    }
+    else{
+        likeCount.textContent = `${++postObject.likes} likes`;
+        likeButton.classList.add("liked");
+    }
 }
 
 function createPostElement(post){
